@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/position.js"></script>
+<script type="text/javascript">
+
+window.onload=function(){
+	var leftDiv=document.getElementById("leftDiv");
+	//创建红色苹果
+	for( var b=0;b<=4;b++){
+		var redApple= document.createElement("img");
+		redApple.src="ima/icons/icon-04.png";
+		redApple.title=""+(b+1);
+		leftDiv.appendChild(redApple);
+		redApple.style.position="relative";
+		redApple.style.left=redArr[b].left;
+		redApple.style.top=redArr[b].top;
+		console.log(redArr[b]);
+		redApple.onclick=function(){
+			var tab=document.getElementById("tab");
+		   tab.style.display="block";
+		   console.log(redApple);
+		   }
+		}
+	
+	
+	//创建黄色为苹果
+	for( var c=0;c<=4;c++){
+		var yellowApple= document.createElement("img");
+		yellowApple.src="ima/icons/icon-06.png";
+		yellowApple.title=""+(c+1);
+		leftDiv.appendChild(yellowApple);
+		yellowApple.style.position="relative";
+		yellowApple.style.left=yellowArr[c].left;
+		yellowApple.style.top=yellowArr[c].top;
+		yellowApple.onclick=function(){
+			var tab=document.getElementById("tab");
+		    tab.style.display="block";
+		
+			console.log(yellowApple);
+			
+			}
+		
+		}
+	for( var i=0;i<=4;i++){
+		var greenApple=document.createElement("img");
+		greenApple.src="ima/icons/icon-05.png";
+		greenApple.title=""+(i+1);
+		leftDiv.appendChild(greenApple);
+		greenApple.style.position="relative";
+		greenApple.style.left=greenArr[i].left;
+		greenApple.style.top=greenArr[i].top;
+		console.log(greenArr[i]);
+		greenApple.onclick=function(){
+			var tab=document.getElementById("tab");
+			tab.style.display="block";
+			console.log(greenApple);
+			
+			}
+		
+		
+		}
+	
+	
+	
+	
+	}
+
+
+</script>
+
+<title>学生页面</title>
+</head>
+
+<body>
+
+<div class="bigdiv">
+    	<h1>学生个性网络成长平台</h1>
+        <div class="bottomDiv" id="bg">
+       <div class="leftDiv" id="leftDiv">
+       <img src="ima/icons/icon-02.png" class="singletree">
+       
+       </div>
+       <table class="tab">
+       <tbody id="tab">
+       <tr>
+    <td class="td1">姓名</td>
+    <td class="td2">罗竟</td>
+    </tr>
+    <tr>
+    <td class="td1">实践名称</td>
+    <td class="td2">达标情况记录</td>
+    </tr>
+    <tr>
+    <td class="td1">活动名称</td>
+    <td class="td2">12</td>
+    </tr>
+    <tr>
+    <td class="td1">成绩</td>
+    <td class="td2">21</td>
+    </tr>
+    <tr>
+    <td class="td1">得分</td>
+    <td class="td2">2</td>
+    </tr>
+    <tr>
+    <td class="td1">评价等级</td>
+    <td class="td2">C</td>
+    </tr>
+       
+       
+       </tbody>
+       </table>
+        
+        </div>
+    
+    
+    </div>
+</body>
+</html>

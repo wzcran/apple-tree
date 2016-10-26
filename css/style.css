@@ -1,0 +1,9 @@
+/* CSS Document */
+.bigdiv{ height:700px; text-align:center; }
+.bigdiv .bg{ width:1408px; height:680px; margin: 0 auto; background:url(../ima/icons/icon-07.png) no-repeat center; }
+.bigdiv .bg .tudi{ margin-top:220px; margin-left:175px;}
+.bottomDiv{ width:1408px; height:680px; margin: 0 auto; overflow:hidden; }
+.bottomDiv .leftDiv{ width:800px; background:url(../ima/icons/icon-03.png) no-repeat ; background-size:100% 100%; float:left;}
+.singletree{ margin-top:250px;}
+.tab{ float:left;  border:1px solid gray; border-collapse:collapse; margin-top:50px; margin-left:50px; width:230px; height:50px; }
+.tab tbody{display:none;}
